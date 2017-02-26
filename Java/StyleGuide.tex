@@ -23,7 +23,8 @@
 	tabsize=4,
 	commentstyle=\color{commentcolor},
 	keywordstyle=\color{keywordcolor},
-	stringstyle=\color{stringcolor}
+	stringstyle=\color{stringcolor},
+	columns=flexible
 }
 
 \lstdefinestyle{javasnippet}{
@@ -47,11 +48,9 @@
 		\subsection{Organized Code}
 			\subsubsection{Indenting}
 				\paragraph{}
-					Indent your code with tabs.
-				\paragraph{}	
-					If your editor/IDE does not let you indent with tabs, consider getting a better one! Eclipse is one good IDE that runs on Linux, macOS, and Windows. You can install it on a (fast) USB stick if you want. It is also free/libre software.
+					Indent your code with tabs if possible. Most IDEs and editors use tabs as the default. If your IDE doesn't use tabs, try and enable them in your IDE settings. Some older IDEs such as Dr. Java do not have this option. Because of this, no marks will be deducted for using spaces instead of tabs. Just make sure that your indentation is consistent.
 				\paragraph{}
-					https://www.eclipse.org/
+					There is no rule for how many characters wide indentation should be. However, most programmers use either four or eight character wide indentation. Virtually all IDEs (including Dr. Java, which uses two spaces as its default) allow this to be changed. It does not matter how wide your indentation is, as long as it is something sensible (at least two characters wide and no more than eight characters wide). The most important thing is to \textbf{be consistent}.
 			\subsubsection{Whitespace}
 				\paragraph{}
 					Generally, some whitespace is good, but too much whitespace is bad.
@@ -63,12 +62,12 @@
 						\item Between sections of code (put a line between your local variable declarations and the processing for example), although this is more of a guideline than a rule. Use your common sense!
 					\end{itemize}
 				\paragraph{}
-					To see when you should have spaces in your code, see the exemplar below.
+					Spaces have more complicated rules than new lines, but there are not many rules to them. For example: have a space after commas and before and after braces (unless the brace is the last character on the line). For more details on spacing, see the exemplar below.
 			\subsubsection{Comments}
 				\paragraph{}
 					Contrary to popular belief, you do \textbf{not} need to comment every other line of your code.
 				\paragraph{}
-					If you are using unfamiliar libraries, it may help you and others if you use more comments, but generally, lots of comments are not needed. There is nothing wrong with having extra comments, but they are rarely necessary. If you think that your code does not make any sense without comments, you should think if it can be written in a simpler way. If it cannot, then write some comments, but you will find that you can usually make your code a lot more KISS.
+					If you are using unfamiliar libraries, it may help to use more comments, but generally, lots of comments are not needed. There is nothing wrong with having extra comments, but they are rarely necessary. If you think that your code does not make any sense without comments, you should think if it can be written in a simpler way. If it cannot, then write some comments, but you will find that you can usually make your code a lot more KISS.
 				\paragraph{}
 					Again, this is a guideline, not a rule, but if you feel that you need comments \textbf{beyond} the Javadoc comments, then your code might not be KISS.
 	\newpage
